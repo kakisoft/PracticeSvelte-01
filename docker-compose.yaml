@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+    svelte_app:
+        container_name: svelte_app
+        build:
+            dockerfile: ./Dockerfile
+            context: .
+            args:
+                - TZ=Asia/Tokyo
+        volumes:
+            - ./drive_recorder_client:/drive_recorder_client
+        working_dir: /drive_recorder_client
+        ports:
+            - '3000:3000'
+            - '5173:5173'
+        tty: true
+    mock-server:
+        container_name: prism_mock_server
+        image: stoplight/prism:4
+        platform: linux/amd64
+        volumes:
+            - ./APISpecifications/opanapi_app_01.yaml:/opanapi_app_01.yaml
+        command: mock -h 0.0.0.0 /opanapi_app_01.yaml
+        ports:
+            - 4010:4010
