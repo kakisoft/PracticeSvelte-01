@@ -25,3 +25,18 @@ npm run dev -- --open
 npm run dev:development -- --host --port 5173
 ```
 
+
+## Note
+```
+## svelte_app01\package.json
+vite dev --mode development
+vite dev --mode production
+vite build --mode development
+vite build --mode production
+node build
+
+
+## svelte_app01\svelte.config.js
+import adapter from '@sveltejs/adapter-node';
+```
+

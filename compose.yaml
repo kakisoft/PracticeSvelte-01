@@ -10,7 +10,7 @@ services:
             - ./svelte_app01:/svelte_app01
         working_dir: /svelte_app01
         ports:
-            - '3000:3000'
+            - '3001:3001'
             - '5173:5173'
         tty: true
     prism_mock_server:

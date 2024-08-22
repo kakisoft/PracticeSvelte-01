@@ -26,4 +26,4 @@ run/preview:
 	docker compose exec svelte_app01 bash -c "npm run preview -- --host --port 5173"
 
 node/build:
-	docker compose exec svelte_app01 bash -c "npm run start"
+	docker compose exec svelte_app01 bash -c "PORT=3001 npm run start"
