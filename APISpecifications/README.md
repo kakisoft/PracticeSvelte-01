@@ -12,14 +12,14 @@ npm install -g @stoplight/prism-cli
 
 ## yaml ファイルからモックサーバを起動
 ```
-prism mock opanapi_app_01.yaml -p 4010
+prism mock opanapi_app01.yaml -p 4010
 ```
 
 モックサーバを起動すると、APIをコールしてアクセスできます。  
 
 （使用例）
 ```
-curl -X 'GET' 'http://localhost:4010/api/events' -H 'accept: application/json'
+curl -X 'GET' 'http://localhost:4010/api/accesstest' -H 'accept: application/json'
 ```
 
 （レスポンス例）
