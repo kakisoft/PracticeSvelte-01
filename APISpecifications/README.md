@@ -24,18 +24,7 @@ curl -X 'GET' 'http://localhost:4010/api/accesstest' -H 'accept: application/jso
 
 （レスポンス例）
 ```json
-[
-    {
-        "event_code": "IMPACT_L",
-        "event_name": "衝撃：大"
-    },
-    {
-        "event_code": "IMPACT_M",
-        "event_name": "衝撃：中"
-    },
-    {
-        "event_code": "MANUAL",
-        "event_name": "手動"
-    }
-]
+{
+  "status": "success"
+}
 ```
