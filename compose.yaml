@@ -7,8 +7,8 @@ services:
             args:
                 - TZ=Asia/Tokyo
         volumes:
-            - ./drive_recorder_client:/drive_recorder_client
-        working_dir: /drive_recorder_client
+            - ./svelte_app01:/svelte_app01
+        working_dir: /svelte_app01
         ports:
             - '3000:3000'
             - '5173:5173'

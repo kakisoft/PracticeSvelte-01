@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-WORKDIR /drive_recorder_client
+WORKDIR /svelte_app01
 
 #========================================
 #        execute setting script
