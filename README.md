@@ -45,3 +45,8 @@ node build
 import adapter from '@sveltejs/adapter-node';
 ```
 
+## build / start : execute from host (not container)
+```
+make run/prod
+make node/build
+```
