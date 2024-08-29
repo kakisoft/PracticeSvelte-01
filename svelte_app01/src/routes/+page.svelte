@@ -10,6 +10,9 @@
 </svelte:head>
 
 <section>
+	<p>
+		[ Node.js v20 ]
+	</p>
 	<h1>
 		<span class="welcome">
 			<picture>
