@@ -26,10 +26,11 @@ npm run dev:development -- --host --port 5173
 ```
 
 
-## Build / start
+## build / start
 ```
 # svelte_app01\package.json
 
+※コンテナの中から実行する場合
 ## build
 vite dev --mode development
 vite dev --mode production
