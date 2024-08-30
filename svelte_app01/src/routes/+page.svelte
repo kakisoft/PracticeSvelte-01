@@ -1,4 +1,7 @@
-<script>
+<script lang="ts">
+	// 環境変数にアクセス
+	const nodeVersion = import.meta.env.VITE_NODE_VERSION;
+
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
@@ -11,7 +14,7 @@
 
 <section>
 	<p>
-		[ Node.js v20 ]
+		[ Node.js {nodeVersion} ]
 	</p>
 	<h1>
 		<span class="welcome">
