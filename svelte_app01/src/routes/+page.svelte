@@ -14,7 +14,7 @@
 
 <section>
 	<p>
-		[ Node.js {nodeVersion} ]
+		[ Running on Node.js version  {nodeVersion} ]
 	</p>
 	<h1>
 		<span class="welcome">
